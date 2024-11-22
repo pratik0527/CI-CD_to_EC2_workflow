@@ -29,7 +29,7 @@ jobs:
 
         # SSH into the EC2 instance and execute commands
         ssh -o StrictHostKeyChecking=no -i private_key.pem ${EC2_USER}@${EC2_HOST} << 'EOF'
-          cd ~/mdemoproject-folder
+          cd ~/demoproject-folder
           source venv/bin/activate
           cd demoproject
           git remote -v
