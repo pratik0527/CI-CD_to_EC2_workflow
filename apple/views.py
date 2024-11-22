@@ -2,4 +2,4 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def myfunc(request):
-    return HttpResponse("my name is Manasvi")
+    return HttpResponse("Hi This is Pratik")
