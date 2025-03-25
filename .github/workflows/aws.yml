@@ -6,7 +6,7 @@ on:
       - main  # Change this to your main branch      
 jobs:
   deploy:
-    runs-on: ubuntus-latest
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
@@ -15,7 +15,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.9'  # Change this to your required Python version
+        python-version: '3.112'  # Change this to your required Python version
 
     - name: Deploy to EC2
       env:
