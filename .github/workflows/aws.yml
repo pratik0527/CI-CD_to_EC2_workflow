@@ -6,7 +6,7 @@ on:
       - main  # Change this to your main branch      
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntus-latest
 
     steps:
     - name: Checkout code
