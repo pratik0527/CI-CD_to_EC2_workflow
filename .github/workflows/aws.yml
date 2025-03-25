@@ -29,9 +29,8 @@ jobs:
 
         # SSH into the EC2 instance and execute commands
         ssh -o StrictHostKeyChecking=no -i private_key.pem ${EC2_USER}@${EC2_HOST} << 'EOF'
-          cd ~/demoproject-folder
+          cd ~/CI-CD_to_EC2_workflow
           source venv/bin/activate
-          cd demoproject
           git remote -v
           git pull origin main --no-edit  # Change this to your main branch
           pip install --upgrade pip
